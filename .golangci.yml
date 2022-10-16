@@ -71,5 +71,4 @@ linters:
     - varnamelen # disabled before the final decision in (https://github.com/grafana/k6/pull/2323)
     - wrapcheck # a little bit too much for k6, maybe after https://github.com/tomarrell/wrapcheck/issues/2 is fixed
     - wsl
-    - forbidigo
   fast: false
