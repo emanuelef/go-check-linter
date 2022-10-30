@@ -20,7 +20,7 @@ jobs:
       - name: redoc-cli test
         uses: seeebiii/redoc-cli-github-action@v10
         with:
-          args: 'bundle https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml'
+          args: 'bundle https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml -o index.html'
   deploy:    
     environment:
       name: github-pages
@@ -29,9 +29,6 @@ jobs:
     steps:
       - name: Setup Pages
         uses: actions/configure-pages@v2
-      - name: Create file
-        run: |
-         printf "<!DOCTYPE html>\n<html lang="en">\n<head>\n<title>A simple HTML document</title>\n</head>\n<body>\n<p>Hello World!<p>\n</body>\n</html>" > index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
