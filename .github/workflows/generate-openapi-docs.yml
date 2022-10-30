@@ -12,9 +12,15 @@ concurrency:
 jobs:
   generate-docs:
     name: docs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latestz
     steps:
       - uses: actions/checkout@v3
+        with:
+          name: OAI/OpenAPI-Specification
+      - name: redoc-cli test
+        uses: seeebiii/redoc-cli-github-action@v10
+        with:
+          args: 'bundle https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml'
   deploy:    
     environment:
       name: github-pages
