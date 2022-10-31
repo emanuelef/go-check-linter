@@ -21,6 +21,9 @@ jobs:
         uses: seeebiii/redoc-cli-github-action@v10
         with:
           args: 'bundle https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml -o index.html'
+      - name: Group of log lines
+        run: |
+          ls
   deploy:    
     environment:
       name: github-pages
