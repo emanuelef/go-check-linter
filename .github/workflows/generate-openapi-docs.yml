@@ -26,13 +26,15 @@ jobs:
           args: 'bundle https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml -o index.html'
       - name: Group of log lines
         run: |
-          ls
+          mkdir test
+          mv index.html ./test
+          ls ./test
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: .
+          path: ./test
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
