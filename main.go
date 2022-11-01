@@ -1,3 +1,3 @@
 package main
 
-func mai n() {}
+func main() {}
