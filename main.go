@@ -1,3 +1,3 @@
 package main
 
-func m-ain() {}
+func main() {}
