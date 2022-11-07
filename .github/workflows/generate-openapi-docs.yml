@@ -28,6 +28,7 @@ jobs:
         run: |
           mkdir test
           mv index.html ./test
+          cp ./test/index.html ./test/test.html
           ls ./test
       - name: Setup Pages
         uses: actions/configure-pages@v2
