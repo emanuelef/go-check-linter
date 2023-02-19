@@ -1,0 +1,9 @@
+name: Test
+on: workflow_dispatch
+jobs:
+  example:
+    name: Example Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
