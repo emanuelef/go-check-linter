@@ -3,6 +3,24 @@
 ```geojson
 {
   "type": "FeatureCollection",
+  "features": [{
+    "properties": {},
+    "type": "Feature",
+    "geometry": {
+      "type": "MultiPoint",
+      "coordinates": [
+        [-73, 45],
+        [-76, 46],
+        [-75, 47]
+      ]
+    }
+  }]
+}
+```
+
+```geojson
+{
+  "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
