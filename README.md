@@ -1,16 +1,31 @@
 ![https://github.com/emanuelef/go-check-linter/actions/workflows/main.yml/badge.svg?branch=main&kill_cache=1](https://github.com/emanuelef/go-check-linter/actions/workflows/main.yml/badge.svg?branch=main&kill_cache=1)
 
 ```geojson
- { "type": "FeatureCollection",
-    "features": [
-      { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [55.5136433, 25.4052165]}
-        },
-      { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-61.4630653, 10.4056994]}
-        }
-       ]
-     }
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.5136433,
+          25.4052165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.4630653,
+          10.4056994
+        ]
+      }
+    }
+  ]
+}
 ```
 
 ```geojson
