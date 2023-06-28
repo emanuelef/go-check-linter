@@ -5,8 +5,10 @@
     "features": [
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [55.5136433, 25.4052165]},
-        "properties": {"name": "Dubai"}
-        }
+        },
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [55.5136433, 25.4052165]},
+        },
        ]
      }
 ```
