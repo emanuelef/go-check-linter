@@ -6,9 +6,9 @@
   "features": [
     {
       "type": "Feature",
+      "properties": {"city": "Ciao"},
       "geometry": {
         "type": "Point",
-        "properties": {"city": "Ciao"},
         "coordinates": [
           55.5136433,
           25.4052165
